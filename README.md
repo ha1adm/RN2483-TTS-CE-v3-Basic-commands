@@ -1,6 +1,9 @@
 # RN2483-TTS-CE-v3-Basic-commands
 RN2483-TTS-CE (v3) Basic commands (OTAA and ABP) 
 
+To resets the module firmware to default values, plus clears the EEPROM
+> sys factoryRESET
+
 To get the DevEUI for the RN2483 module:
 mac get deveui
 
