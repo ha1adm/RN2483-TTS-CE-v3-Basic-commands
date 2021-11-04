@@ -5,7 +5,7 @@ To resets the module firmware to default values, plus clears the EEPROM
 > sys factoryRESET
 
 To get the DevEUI for the RN2483 module:
-mac get deveui
+> mac get deveui
 
 When an Over-the-Air Activation (OTAA) device is registered we are provided with:
 
