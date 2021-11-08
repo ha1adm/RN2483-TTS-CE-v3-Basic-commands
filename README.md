@@ -21,12 +21,20 @@ On start-up the module will need to be configured with these before it can reque
 
 Activation By Personalisation (ABP) device is registered we are provided with:
 
+#Note: For some reason I can't get the device to automatically adjust the RX1 window form the factory default 1s to 5s.
+(As requested by the Network server. So I added this line manually. After This ADR and Downlink is working correctly)
+Auto reply is setted up here for confirmed Downlinks. If the application needs otherwise make manual replys.
+
+
     Devaddr
     Nwkskey
     Appskey
 
 > mac set devaddr AAAAAAAA                           
 > mac set nwkskey KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK   
-> mac set appskey KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK   
+> mac set appskey KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+> mac set rxdelay1 5000
+> mac set adr on
+> mac set ar on   
 > mac save                                           
 > mac join abp                                       
